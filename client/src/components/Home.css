@@ -1,0 +1,31 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align content */
+    padding: 20px;
+    /* Padding around the container */
+    background-color: #f4f4f4;
+    /* Light background color for contrast */
+}
+
+.content-section {
+    display: flex;
+    flex-direction: row;
+    /* Align components in a row */
+    justify-content: space-between;
+    /* Space between components */
+    width: 100%;
+    /* Full width */
+    max-width: 1200px;
+    /* Maximum width for larger screens */
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        /* Stack components on smaller screens */
+        align-items: center;
+        /* Center align on small screens */
+    }
+}
